@@ -1,0 +1,101 @@
+
+.dashboard-header {
+grid-column: 1/4;
+grid-row: 1;
+position: relative;
+background-color: #0b54e6;
+color: white;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+overflow: hidden;
+}
+
+.dashboard-header h1 {
+font-size: 4rem;
+font-weight: 400;
+position: relative;
+z-index: 1;
+}
+
+
+.dashboard { 
+    display: grid;
+    width: 100vw; /* 100% del ancho de la ventana */
+height: 100vh; /* 100% del alto de la ventana */
+grid-template-columns: 50% 30% 20% ;
+grid-template-rows: 10% 10% 40% 40%;
+grid-gap: 10px;
+
+}
+
+.one {
+display: grid;
+grid-column: 1/4;
+grid-row: 2;
+grid-template-columns: repeat(5, 1fr); /* Cinco columnas de igual tamaño */
+grid-gap: 10px; /* Espacio entre las cajas de KPI */
+/* Espacio alrededor de los contenedores de KPI dentro de .one */
+background-color: #f0f0f0; /* Fondo gris para el área de KPIs */
+}
+
+.kpi-container {
+background-color: #d9d9d9; /* Fondo gris para los contenedores de KPI */
+border-radius: 15px; /* Esquinas redondeadas */
+padding: 20px; /* Espacio dentro de los contenedores de KPI */
+display: flex;
+justify-content: center; /* Centrar el contenido horizontalmente */
+align-items: center; /* Centrar el contenido verticalmente */
+text-align: center; /* Asegurar que el texto también esté centrado */
+}
+
+/* Añadir un poco de estilo al texto dentro de los contenedores de KPI */
+.kpi-container h2 {
+color: #333; /* Color de texto oscuro para contraste */
+font-size: 1.5em; /* Tamaño del título del KPI */
+}
+
+.two {
+grid-column: 1 ;
+grid-row: 3;
+
+}
+.three {
+grid-column: 2;
+grid-row: 3;
+
+}
+.four {
+grid-column: 1;
+grid-row: 4;
+
+}
+.five {
+grid-column: 2;
+grid-row: 4;
+
+}
+.six {
+grid-column: 3;
+grid-row: 3/6;
+
+}
+.chart { 
+    padding: 20px; 
+    border: 1px solid #ccc;
+}
+.map { 
+    grid-row: 1 / span 2;
+    border: 1px solid #ccc;
+}
+iframe { 
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
