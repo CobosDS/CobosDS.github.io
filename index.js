@@ -34,12 +34,5 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
 const headerLogoConatiner = document.querySelector('.header__logo-container')
 
 headerLogoConatiner.addEventListener('click', () => {
-
-  const currentUrl = window.location.href;
-
-  if (currentUrl.includes('/fat_is_pa_200_20023/')) { 
-    location.href = '../index.html';
-  } else {
-    location.href = 'index.html';
-  }
+    location.href = 'index.html'
 })
